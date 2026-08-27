@@ -1,0 +1,47 @@
+project:
+  name: Haplodon
+  version: 0.17.0
+  copyright: 2026, Koesterlab
+  authors: Felix Wiegand, Felix Mölder, Johannes Köster
+
+color: green
+logo:
+  dark: haplodon.svg
+  light: haplodon.svg
+
+repo:
+  name: fxwiegand/haplodon
+  contributors:
+    skip:
+      - github-actions[bot]
+      - dependabot[bot]
+
+header:
+  logo: haplodon.svg
+  name: Haplodon
+  links:
+    - text: Github
+      url: https://github.com/fxwiegand/haplodon
+
+hero:
+  img:
+    dark: haplodon.svg
+    light: haplodon.svg
+  statements:
+    - Uncertainty-aware haplotype-based genomic variant effect prediction
+  links:
+    - url: https://github.com/fxwiegand/haplodon
+      text: View on Github
+
+features:
+  - title: Read variants in their haplotype context
+    desc: |
+      Haplodon is a command line tool written in Rust for uncertainty-aware, haplotype-based genomic variant effect prediction. Instead of interpreting variants independently, it models them in a graph whose paths represent haplotypes, integrating read evidence of variant co-occurrence from the uncertainty-aware caller varlociraptor. For each haplotype it reconstructs the protein sequence of the affected transcripts and scores its physicochemical divergence from the reference.
+    img: haplodon.svg
+    img-width: min(30vw, 550px)
+    url: https://github.com/fxwiegand/haplodon
+
+docs:
+  src: docs
+  links:
+    Homepage: https://haplodon.github.io
